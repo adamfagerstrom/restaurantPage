@@ -1,0 +1,37 @@
+{
+  "name": "restaurantpage",
+  "version": "1.0.0",
+  "description": "A restaurant page made with JS",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack serve --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamfagerstrom/restaurantPage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adamfagerstrom/restaurantPage/issues"
+  },
+  "homepage": "https://github.com/adamfagerstrom/restaurantPage#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.1",
+    "html-webpack-plugin": "^4.5.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
+    "source-map-loader": "^2.0.0"
+  }
+}
