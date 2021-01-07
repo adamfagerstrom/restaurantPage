@@ -13,6 +13,7 @@ module.exports = {
     //         title: "Restaurant Page",
     //     }),
     // ],
+
     devServer: {
         contentBase: "./dist",
         hot: true,

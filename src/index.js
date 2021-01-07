@@ -1,6 +1,8 @@
 import _ from "lodash";
 import "./style.scss";
 import initialLoad from "./components/initial_load.js";
+import navBarComp from "./components/navbar.js";
+import createMenu from "./components/menu_page.js";
 
 if (module.hot) {
     module.hot.accept("./print.js", function () {
@@ -9,4 +11,6 @@ if (module.hot) {
     });
 }
 
+navBarComp();
 initialLoad();
+createMenu();

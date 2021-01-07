@@ -15,6 +15,37 @@ h2 {
     background-color: antiquewhite;
 }
 
+.siteheader {
+    display: flex;
+    width: 100vw;
+    height: 64px;
+    background-color: rgba(17, 17, 17, 0.9);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    nav {
+        ul {
+            display: flex;
+            list-style: none;
+            li {
+                a {
+                    color: white;
+                    font-family: raleway, sans-serif;
+                    font-size: 1.25rem;
+                    padding: 1rem;
+                    cursor: pointer;
+                    &.active {
+                        background-color: rgba(245, 245, 245, 0.9);
+                        color: rgba(17, 17, 17, 0.9);
+                    }
+                }
+            }
+        }
+    }
+}
+
 main {
     .wrapper {
         background-image: url("/src/img/rest1.jpg");
@@ -24,18 +55,40 @@ main {
         display: flex;
         align-items: center;
         justify-content: center;
-        .contentContainer {
+        .logoContainer {
             background-color: rgba(17, 17, 17, 0.9);
             width: 250px;
             height: 300px;
             display: flex;
             align-items: center;
             justify-content: center;
+            position: absolute;
+            display: none;
+            ///TA BORT SEN
             h2 {
                 color: white;
                 font-size: 4rem;
-                // padding: 6rem 1rem;
             }
+        }
+    }
+    .siteContainer {
+        width: 100vw;
+        height: 100vh;
+        background-color: antiquewhite;
+        display: flex;
+        padding-top: 64px;
+        .imgContainer {
+            flex: 0 0 30%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .textContainer {
+            flex: 0 0 70%;
+            height: 100%;
         }
     }
 }

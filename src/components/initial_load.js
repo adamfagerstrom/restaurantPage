@@ -3,14 +3,14 @@ function initialLoad() {
     newWrapper.classList.add("wrapper");
 
     //Container for heading
-    const contentContainer = document.createElement("div");
-    contentContainer.classList.add("contentContainer");
-    newWrapper.appendChild(contentContainer);
+    const logoContainer = document.createElement("div");
+    logoContainer.classList.add("logoContainer");
+    newWrapper.appendChild(logoContainer);
 
     //Heading
     const heading = document.createElement("h2");
     heading.innerText = "CALM";
-    contentContainer.appendChild(heading);
+    logoContainer.appendChild(heading);
 
     document.querySelector("#content").appendChild(newWrapper);
 
